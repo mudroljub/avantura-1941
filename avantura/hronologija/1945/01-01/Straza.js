@@ -1,6 +1,8 @@
-import {Izbor} from "../../../komponente/izbor/Izbor"
+import {
+  Izbor
+} from "../../../komponente/izbor/Izbor"
 import podaci from './podaci.json'
-import Sneg from '../../../../opste/priroda/Sneg.js'
+import Sneg from '../../../priroda/Sneg.js'
 const sneg = new Sneg()
 
 export default class extends Izbor {
@@ -9,7 +11,7 @@ export default class extends Izbor {
     super(podaci)
   }
 
-  start(){
+  start() {
     super.start()
     sneg.start()
   }

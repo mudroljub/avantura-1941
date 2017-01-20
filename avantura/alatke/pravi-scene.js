@@ -5,7 +5,7 @@ const fs = require('fs')
 const {
   capitalizeFirst,
   camelCaseToDash
-} = require('../../opste/utils');
+} = require('../utils');
 
 /* LOGIKA */
 

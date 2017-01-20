@@ -1,10 +1,10 @@
 {
-  "name": "igrica-partizani",
+  "name": "avantura-1941",
   "version": "0.0.1",
   "description": "Ratna igrica zasnovana na istorijskim dokumentima i ljudskim izborima.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mudroljub/js6-classes.git"
+    "url": "git@github.com:mudroljub/avantura-1941.git"
   },
   "main": "main.js",
   "scripts": {

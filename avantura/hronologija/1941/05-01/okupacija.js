@@ -1,5 +1,9 @@
-import {Izbor} from "../../../komponente/izbor/Izbor";
-import {Kisha} from "../../../../opste/priroda/Kisha.js";
+import {
+  Izbor
+} from "../../../komponente/izbor/Izbor";
+import {
+  Kisha
+} from "../../../priroda/Kisha.js";
 import podaci from './podaci.json';
 import stil from "./stil.css";
 
@@ -12,12 +16,12 @@ export default class extends Izbor {
     this.stil = stil;
   }
 
-  start () {
+  start() {
     super.start()
     kisha.start()
   }
 
-  stop () {
+  stop() {
     super.stop()
     kisha.stop()
   }
