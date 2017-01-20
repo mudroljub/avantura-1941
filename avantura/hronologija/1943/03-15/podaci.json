@@ -1,0 +1,18 @@
+{
+  "naslov": "Opkoljen si!",
+  "slika": "fotke/nemci/nemci-pretrazuju-kolibu.jpg",
+  "opis": "Krvoločni okupatori su našli kolibu u kojoj ležiš ranjen. Višestruko su nadmoćniji od tebe. Izgleda da je ovo tvoj kraj.",
+  "akcija": "Otkrij svoju sudbinu!",
+  "ishodi": [{
+    "naslov": "Zarobljen si",
+    "opis": "Zarobljen si i odveden u koncentracioni logor. Dok si živ još uvek ima šanse za otpor.",
+    "link": "logor"
+  }, {
+    "naslov": "Izvukao si se...",
+    "opis": "Vojnici su pretresli kolibu ali nisu našli nikoga. Nekim čudom si uspeo da se izvučeš.",
+    "link": "kuca"
+  }, {
+    "mrtav": "mrtav",
+    "opis": "Ubijen si na licu mesta. Tvoje kosti sada raznose zveri, ali tvoja hrabrost nadahnjuje generacije."
+  }]
+}

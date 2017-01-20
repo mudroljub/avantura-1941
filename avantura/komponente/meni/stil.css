@@ -1,0 +1,20 @@
+svg {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+line {
+  stroke-width: 2;
+  stroke: rgb(255, 0, 0);
+}
+
+.datum {
+  left: 10px;
+}
+
+#sacuvaj {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}

@@ -1,0 +1,13 @@
+<h1 class="naslov">${this.podaci.naslov}</h1>
+
+<div class="okvir">
+    <img class="full" src="${this.podaci.slika}" alt="slika">
+</div>
+
+<p class="opis">${this.podaci.opis}</p>
+
+<p class="pitanje">${this.podaci.pitanje || ''}</p>
+
+<button class="kockice" id="kockice"><img src="/slike/interfejs/kockice.gif"><br>
+    <span>${this.podaci.akcija}</span>
+</button>
