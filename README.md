@@ -1,3 +1,5 @@
+![](screen.png)
+
 # 1941 (avantura)
 
 Ratna igrica zasnovana na istorijskim dokumentima i ljudskim izborima.
@@ -17,6 +19,10 @@ Da pokreneš igru u razvojnom modu ukucaj:
 npm start
 ```
 Browser će se automatski osvežavati svaki put kada sačuvaš izmenu.
+
+Tipične greške:
+* fale generisani fajlovi (bili su na ignor)
+* server puca, jer je port zauzet
 
 ## Dokumentacija
 

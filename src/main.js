@@ -1,12 +1,10 @@
-import {
-  Meni
-} from './komponente/meni/Meni'
-import {
-  scene
-} from './generisano/scene'
+import {Editor} from './komponente/editor/Editor'
+import {scene} from './generisano/scene'
 
-const meni = new Meni()
-let trenutnaScena = meni
+const editor = new Editor()
+const prvaScena = scene['1941-05-01-okupacija']
+let trenutnaScena = prvaScena
+
 trenutnaScena.start()
 
 /* DOGADJAJI */
@@ -26,16 +24,21 @@ window.addEventListener('hashchange', rutiraj)
 
 /* FUNKCIJE */
 
-function pustiScenu(scena) {
-  let izabranaScena = scene[scena] || meni
-  window.location.hash = scene[scena] ? scena : ''
+function pustiScenu(ruta) {
   trenutnaScena.stop()
-  trenutnaScena = izabranaScena
+  if (ruta in scene) {
+    trenutnaScena = scene[ruta]
+  } else if (ruta == 'editor') {
+    trenutnaScena = editor
+  } else {
+    trenutnaScena = prvaScena
+  }
   trenutnaScena.start()
+  window.location.hash = ruta
   window.scroll(0, 0)
 }
 
 function rutiraj() {
-  let ruta = window.location.hash.slice(1)
+  const ruta = window.location.hash.slice(1)
   pustiScenu(ruta)
 }

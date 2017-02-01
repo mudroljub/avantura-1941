@@ -16,7 +16,7 @@ import stil from './stil.css'
 const startY = 0
 const proredY = 200
 
-export class Meni extends Scena {
+export class Editor extends Scena {
 
   constructor() {
     super({}, sablon)

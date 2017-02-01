@@ -13,15 +13,15 @@ app.use(bodyParser.urlencoded({    // to support URL-encoded bodies
   extended: true
 }));
 
-/*** USLUGE ***/
+/*** SERVISI ***/
 
 /*
 Upisuje pozicije
-@param json pozicije: objekat sa pozicijama meni elemenata
+@param json pozicije: objekat sa pozicijama editor elemenata
 */
 app.post('/pozicije', function(req, res) {
     var pozicije = req.body.pozicije;
-    fs.writeFile('./src/komponente/meni/pozicije.json', pozicije, function() {
+    fs.writeFile('./src/komponente/editor/pozicije.json', pozicije, function() {
       res.send('pozicije sacuvane')
     })
 });
