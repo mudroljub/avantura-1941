@@ -10,8 +10,8 @@ const {
 /* LOGIKA */
 
 var slash = os.platform() == 'win32' ? '\\' : '/'
-var putanja = `avantura${slash}hronologija${slash}`
-var nazivFajla = `avantura${slash}generisano${slash}scene.js`
+var putanja = `src${slash}hronologija${slash}`
+var nazivFajla = `src${slash}generisano${slash}scene.js`
 
 nadjiJsFajlove(function(podaci) {
   var scene = praviScene(podaci)
@@ -41,7 +41,7 @@ function praviScene(jsFajlovi) {
   for (let i = 0; i < jsFajlovi.length; i++) {
     var putanja = jsFajlovi[i]
     var unixPutanja = putanja.replace(/\\/g, '/')
-    var kracaPutanja = putanja.replace(`avantura${slash}`, '')
+    var kracaPutanja = putanja.replace(`src${slash}`, '')
     var unixKracaPutanja = kracaPutanja.replace(/\\/g, '/')
     var ekstenzija = path.extname(kracaPutanja)
 

@@ -1,15 +1,11 @@
 var path = require('path');
 
-const PUTANJE = {
-  dist: path.join(__dirname, 'dist')
-};
-
 var config = {
   entry: {
-    avantura: './avantura/main.js'
+    avantura: './src/main.js'
   },
   output: {
-    path: PUTANJE.dist,
+    path: path.join(__dirname, 'dist'),
     filename: '[name].js',
     publicPath: '/dist/'
   },

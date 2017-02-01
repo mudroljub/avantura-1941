@@ -21,7 +21,7 @@ Upisuje pozicije
 */
 app.post('/pozicije', function(req, res) {
     var pozicije = req.body.pozicije;
-    fs.writeFile('./avantura/komponente/meni/pozicije.json', pozicije, function() {
+    fs.writeFile('./src/komponente/meni/pozicije.json', pozicije, function() {
       res.send('pozicije sacuvane')
     })
 });

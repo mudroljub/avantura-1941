@@ -30,16 +30,16 @@ export const scene = {
 }
 
 export const lokacije = {
-	'1941-05-01-okupacija': 'avantura/hronologija/1941/05-01/okupacija.js',
-	'1941-05-10-odvodjenje': 'avantura/hronologija/1941/05-10/odvodjenje.js',
-	'1941-05-15-ravna-gora': 'avantura/hronologija/1941/05-15/RavnaGora.js',
-	'1941-05-15-pripreme': 'avantura/hronologija/1941/05-15/pripreme.js',
-	'1941-07-07-zakletva': 'avantura/hronologija/1941/07-07/Zakletva.js',
-	'1941-08-11-izvestaj': 'avantura/hronologija/1941/08-11/Izvestaj.js',
-	'1941-09-09-diverzija': 'avantura/hronologija/1941/09-09/Diverzija.js',
-	'1941-09-24-sabac': 'avantura/hronologija/1941/09-24/Sabac.js',
-	'1941-10-10-kraljevo': 'avantura/hronologija/1941/10-10/Kraljevo.js',
-	'1943-03-15-opkoljen': 'avantura/hronologija/1943/03-15/Opkoljen.js',
-	'1944-01-15-opkoljen': 'avantura/hronologija/1944/01-15/Opkoljen.js',
-	'1945-01-01-straza': 'avantura/hronologija/1945/01-01/Straza.js',
+	'1941-05-01-okupacija': 'src/hronologija/1941/05-01/okupacija.js',
+	'1941-05-10-odvodjenje': 'src/hronologija/1941/05-10/odvodjenje.js',
+	'1941-05-15-ravna-gora': 'src/hronologija/1941/05-15/RavnaGora.js',
+	'1941-05-15-pripreme': 'src/hronologija/1941/05-15/pripreme.js',
+	'1941-07-07-zakletva': 'src/hronologija/1941/07-07/Zakletva.js',
+	'1941-08-11-izvestaj': 'src/hronologija/1941/08-11/Izvestaj.js',
+	'1941-09-09-diverzija': 'src/hronologija/1941/09-09/Diverzija.js',
+	'1941-09-24-sabac': 'src/hronologija/1941/09-24/Sabac.js',
+	'1941-10-10-kraljevo': 'src/hronologija/1941/10-10/Kraljevo.js',
+	'1943-03-15-opkoljen': 'src/hronologija/1943/03-15/Opkoljen.js',
+	'1944-01-15-opkoljen': 'src/hronologija/1944/01-15/Opkoljen.js',
+	'1945-01-01-straza': 'src/hronologija/1945/01-01/Straza.js',
 }
