@@ -4,7 +4,9 @@
 
 Ratna igrica zasnovana na istorijskim dokumentima i ljudskim izborima.
 
-## Instalacija
+Možeš je probati ovde: [mudroljub.github.io/avantura-1941](https://mudroljub.github.io/avantura-1941)
+
+## Razvoj
 
 Prvo instaliraj [node.js](https://nodejs.org). Nakon toga kloniraj repo i instaliraj zavisnosti:
 ```
@@ -12,16 +14,13 @@ git clone
 npm install
 ```
 
-## Razvoj
-
 Da pokreneš igru u razvojnom modu ukucaj:
 ```
 npm start
 ```
-Browser će se automatski osvežavati svaki put kada sačuvaš izmenu.
 
-Tipične greške:
-* fale generisani fajlovi (bili su na ignor)
+Tipične greške (previdi) u razvoju:
+* fale generisani fajlovi
 * server puca, jer je port zauzet
 
 ## Dokumentacija
