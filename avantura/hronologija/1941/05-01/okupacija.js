@@ -1,9 +1,5 @@
-import {
-  Izbor
-} from "../../../komponente/izbor/Izbor";
-import {
-  Kisha
-} from "../../../priroda/Kisha.js";
+import {Izbor} from "../../../komponente/izbor/Izbor";
+import {Kisha} from "../../../priroda/Kisha.js";
 import podaci from './podaci.json';
 import stil from "./stil.css";
 

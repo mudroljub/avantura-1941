@@ -1,6 +1,4 @@
-import {
-  Izbor
-} from "../../../komponente/izbor/Izbor"
+import {Izbor} from "../../../komponente/izbor/Izbor"
 import podaci from './podaci.json'
 import Sneg from '../../../priroda/Sneg.js'
 const sneg = new Sneg()

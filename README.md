@@ -9,6 +9,9 @@ Prvo instaliraj [node.js](https://nodejs.org). Nakon toga kloniraj repo i instal
 git clone
 npm install
 ```
+
+## Razvoj
+
 Da pokreneš igru u razvojnom modu ukucaj:
 ```
 npm start
