@@ -92,14 +92,15 @@
     "upute": "Unesi svoje ime kako bi prihvatio partizansku zakletvu:",
     "akcija": "Zaklinjem se!",
     "slika": "fotke/1941/1941-08-cacanski-partizanski-odred.jpg",
-    "tekstZakletve1": "Ja ${this.igrac.ime}, sin srpskog naroda, zaklinjem se svojom čašću da u ${this.igrac.jedinica} stupam sa čvrstom odlukom da se borim protiv fašističih okupatora i izdajnika srpskog naroda.",
-    "tekstZakletve2": "Mi, narodni partizani Jugoslavije, latili smo se oružja za nemilosrdnu borbu protiv krvoločnih neprijatelja koji porobiše našu zemlju i istrebljuju naše narode. Zaklinjemo se da ćemo disciplinovano, uporno i neustrašivo, ne štedeći svoje krvi i života, voditi borbu do potpunog uništenja fašističkog osvajača i svih narodnih izdajnika.",
+    "tekst": "Ja ${this.igrac.ime}, sin srpskog naroda, zaklinjem se svojom čašću da u ${this.igrac.jedinica} stupam sa čvrstom odlukom da se borim protiv fašističih okupatora i izdajnika srpskog naroda. <br><br> Mi, narodni partizani Jugoslavije, latili smo se oružja za nemilosrdnu borbu protiv krvoločnih neprijatelja koji porobiše našu zemlju i istrebljuju naše narode. Zaklinjemo se da ćemo disciplinovano, uporno i neustrašivo, ne štedeći svoje krvi i života, voditi borbu do potpunog uništenja fašističkog osvajača i svih narodnih izdajnika.",
     "akcija2": "U borbu druže ${this.igrac.ime}!"
   },
   "1941-08-08-zakletva": {
     "sablon": "Zakletva",
     "naslov": "Četnička zakletva",
-    "tekst": "Ja, ${this.igrac.ime}, zaklinjem se svemogućim Bogom, da ću Vrhovnom zapovedniku sve vojne sile, Kralju Jugoslavije Petru II, svagda i u svim prilikama, biti veran, svom dušom odan i poslušan; da ću se za Kralja i Otadžbinu junački boriti; da vojničku zastavu nigde i nikad neću izneveriti i da ću zapovesti svih pretpostavljenih mi starešina slušati i verno izvršavati. Tako mi Bog pomogao!"
+    "tekst": "Ja, ${this.igrac.ime}, zaklinjem se svemogućim Bogom, da ću Vrhovnom zapovedniku sve vojne sile, Kralju Jugoslavije Petru II, svagda i u svim prilikama, biti veran, svom dušom odan i poslušan; da ću se za Kralja i Otadžbinu junački boriti; da vojničku zastavu nigde i nikad neću izneveriti i da ću zapovesti svih pretpostavljenih mi starešina slušati i verno izvršavati. Tako mi Bog pomogao!",
+    "akcija": "Zaklinjem se!",
+    "akcija2": "U borbu junače ${this.igrac.ime}!"
   },
   "1941-08-11-izvestaj": {
     "sablon": "Izvestaj",
