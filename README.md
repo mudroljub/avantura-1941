@@ -79,7 +79,6 @@ Stil se renderuje u html šablonu unutar `style` taga, na sledeći način:
 ```
 
 ## TODO:
-- refaktorisati u js module, obrisati webpack i loadere (mozda su potrebni za html sablone?)
 - srediti četničku zakletvu u data.json
 - proveriti interpolaciju struna u data.json
 - unositi sadržaj
