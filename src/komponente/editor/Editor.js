@@ -42,10 +42,11 @@ export class Editor extends Scena {
     let polaSirineInputa = 118
     let polaVisineInputa = 22
 
-    for (let scena in data) {
-      let x = pozicije[scena] && pozicije[scena].x || window.innerWidth / 2 - polaSirineDugmeta
-      let godina = scena.substring(0, 4)
-      let datum = scena.substring(0, 10)
+    for (let key in data) {
+      const scena = data[key]
+      let x = pozicije[key] && pozicije[key].x || window.innerWidth / 2 - polaSirineDugmeta
+      let godina = key.substring(0, 4)
+      let datum = key.substring(0, 10)
       if (prethodniDatum && datum != prethodniDatum) y += proredY // pravi novi red samo za novi datum
 
       if (godina != prethodnaGodina) {
@@ -58,14 +59,14 @@ export class Editor extends Scena {
       }
 
       this.scene += `
-        <button value="${scena}" class="dugme-scena js-mrda-x js-dvoklik-start absolute"
+        <button value="${key}" class="dugme-scena js-mrda-x js-dvoklik-start absolute"
         style="top:${y}px; left:${x}px;" contenteditable="true">
-          ${data[scena].naslov}<br>
-          ${scena}
+          ${scena.naslov}<br>
+          ${key}
         </button>`
 
-      if (data[scena].izbori) {
-        let izbori = data[scena].izbori
+      if (scena.izbori) {
+        let {izbori} = scena
         for (var i = 0; i < izbori.length; i++) {
           this.putanje += `
             <line
@@ -86,7 +87,7 @@ export class Editor extends Scena {
                 class="js-mrda-x absolute"
                 style="top:${inputY}px; left:${inputX}px;"
                 value="${izbori[i].link}"
-                data-scena="${scena}" data-index="${i}" />
+                data-scena="${key}" data-index="${i}" />
               <small
                 class="absolute"
                 style="top:${inputY}px; left:${inputX}px;">
@@ -97,7 +98,6 @@ export class Editor extends Scena {
               x2="${inputX + polaSirineInputa}"
               y2="${inputY + polaVisineInputa}" />`
           }
-
         }
       }
       this.svgVisina = y > this.svgVisina ? y : this.svgVisina
@@ -122,7 +122,7 @@ export class Editor extends Scena {
 
   sacuvajPozicije() {
     const pozicije = JSON.stringify(this.dajPozicije())
-    // console.log(pozicije);
+    console.log(pozicije);
   }
 
   dajPozicije() {
