@@ -1,9 +1,0 @@
-{
-  "naslov": "Partizanska zakletva",
-  "upute": "Unesi svoje ime kako bi prihvatio partizansku zakletvu:",
-  "akcija": "Zaklinjem se!",
-  "slika": "fotke/1941/1941-08-cacanski-partizanski-odred.jpg",
-  "tekstZakletve1": "Ja ${this.igrac.ime}, sin srpskog naroda, zaklinjem se svojom čašću da u ${this.igrac.jedinica} stupam sa čvrstom odlukom da se borim protiv fašističih okupatora i izdajnika srpskog naroda.",
-  "tekstZakletve2": "Mi, narodni partizani Jugoslavije, latili smo se oružja za nemilosrdnu borbu protiv krvoločnih neprijatelja koji porobiše našu zemlju i istrebljuju naše narode. Zaklinjemo se da ćemo disciplinovano, uporno i neustrašivo, ne štedeći svoje krvi i života, voditi borbu do potpunog uništenja fašističkog osvajača i svih narodnih izdajnika.",
-  "akcija2": "U borbu druže ${this.igrac.ime}!"
-}
