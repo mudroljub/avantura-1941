@@ -1,8 +1,8 @@
 /**
  * Belo su izbori nepovezani sa scenom
  */
+import data from '../../data.json'
 import { Scena } from '../Scena'
-import { scene } from '../../generisano/scene'
 import pozicije from './pozicije.json'
 import sablon from './sablon.html'
 import stil from './stil.css'
@@ -42,8 +42,7 @@ export class Editor extends Scena {
     let polaSirineInputa = 118
     let polaVisineInputa = 22
 
-    console.log(scene);
-    for (let scena in scene) {
+    for (let scena in data) {
       let x = pozicije[scena] && pozicije[scena].x || window.innerWidth / 2 - polaSirineDugmeta
       let godina = scena.substring(0, 4)
       let datum = scena.substring(0, 10)
@@ -61,12 +60,12 @@ export class Editor extends Scena {
       this.scene += `
         <button value="${scena}" class="dugme-scena js-mrda-x js-dvoklik-start absolute"
         style="top:${y}px; left:${x}px;" contenteditable="true">
-          ${scene[scena].podaci.naslov}<br>
+          ${data[scena].naslov}<br>
           ${scena}
         </button>`
 
-      if (scene[scena].podaci.izbori) {
-        let izbori = scene[scena].podaci.izbori
+      if (data[scena].izbori) {
+        let izbori = data[scena].izbori
         for (var i = 0; i < izbori.length; i++) {
           this.putanje += `
             <line
@@ -123,7 +122,7 @@ export class Editor extends Scena {
 
   sacuvajPozicije() {
     const pozicije = JSON.stringify(this.dajPozicije())
-    console.log(pozicije);
+    // console.log(pozicije);
   }
 
   dajPozicije() {

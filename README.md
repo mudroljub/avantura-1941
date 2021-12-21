@@ -8,20 +8,18 @@ Možeš je probati ovde: [mudroljub.github.io/avantura-1941](https://mudroljub.g
 
 ## Razvoj
 
-Prvo instaliraj [node.js](https://nodejs.org). Nakon toga kloniraj repo i instaliraj zavisnosti:
-```
-git clone
-npm install
-```
+Prvo instaliraj [node.js](https://nodejs.org) i kloniraj repo. Potom:
 
-Da pokreneš igru u razvojnom modu ukucaj:
 ```
+npm install
 npm start
 ```
 
 Tipične greške (previdi) u razvoju:
 * fale generisani fajlovi
 * server puca, jer je port zauzet
+
+Level Editor: localhost:8080/#editor
 
 ## Dokumentacija
 
