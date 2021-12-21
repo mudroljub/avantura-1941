@@ -24,7 +24,8 @@ export class Zakletva extends Scena {
   }
 
   render() {
-    this.element.innerHTML = this.eval(this.eval(this.sablon))   // evaluira dvaput, za sablone unutar sablona
+    this.podaci.tekst = this.podaci.tekst.replace(/\n/g, "<br />")
+    this.element.innerHTML = this.eval(this.eval(this.sablon)) // evaluira dvaput, za sablone unutar sablona
   }
 
   pokaziZakletvu() {
