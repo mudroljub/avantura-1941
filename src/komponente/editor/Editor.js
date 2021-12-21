@@ -1,9 +1,8 @@
-// da linije budu vucljive
-// da pratiMisha menja x2 i y2 umesto style.left i style.top
-// kada izbor dodirne scenu da preuzme vrednost (zalepi se)
-
+/**
+ * Belo su izbori nepovezani sa scenom
+ */
 import { Scena } from '../Scena'
-import { scene, lokacije } from '../../generisano/scene'
+import { scene } from '../../generisano/scene'
 import pozicije from './pozicije.json'
 import sablon from './sablon.html'
 import stil from './stil.css'
@@ -22,7 +21,7 @@ export class Editor extends Scena {
 
   start() {
     super.start()
-    this.azurirajPozicije()
+    this.sacuvajPozicije()
     this.dodajSlusace()
   }
 
@@ -85,7 +84,7 @@ export class Editor extends Scena {
             let inputY = y + 130
             this.scene += `
               <input
-                class="js-azurira-izbor js-mrda-x js-mrda-y absolute"
+                class="js-mrda-x absolute"
                 style="top:${inputY}px; left:${inputX}px;"
                 value="${izbori[i].link}"
                 data-scena="${scena}" data-index="${i}" />
@@ -117,30 +116,14 @@ export class Editor extends Scena {
     this.render()
   }
 
-  azurirajIzbor(element) {
-    let ishod = element.value
-    let lokacija = lokacije[element.dataset.scena]
-    let index = element.dataset.index
-    let fajl = scene[element.dataset.scena].podaciFajl
-    var http = new XMLHttpRequest()
-    http.onload = () => console.log(http.responseText);
-    http.open("POST", "http://localhost:3000/podaci", true);
-    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    http.send(`ishod=${ishod}&lokacija=${lokacija}&index=${index}&fajl=${fajl}`);
-  }
-
   render() {
     this.praviGraf()
     super.render()
   }
 
-  azurirajPozicije() {
-    let pozicije = JSON.stringify(this.dajPozicije())
-    var http = new XMLHttpRequest()
-    http.onload = () => console.log(http.responseText)
-    http.open("POST", "http://localhost:3000/pozicije", true)
-    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-    http.send(`pozicije=${pozicije}`)
+  sacuvajPozicije() {
+    const pozicije = JSON.stringify(this.dajPozicije())
+    console.log(pozicije);
   }
 
   dajPozicije() {
@@ -162,7 +145,6 @@ export class Editor extends Scena {
   pratiMisha(e) {
     const element = e.target
     if (element.classList && element.classList.contains('js-mrda-x')) element.style.left = `${e.pageX - element.clientWidth / 2}px`
-    if (element.classList && element.classList.contains('js-mrda-y')) element.style.top = `${e.pageY - element.clientHeight / 2}px`
   }
 
   zavrsiVucenje(e) {
@@ -178,7 +160,6 @@ export class Editor extends Scena {
     document.addEventListener("mouseout", this.obradiMishIzvan.bind(this))
     document.addEventListener("mousemove", this.obradiMishMrda.bind(this))
     document.addEventListener("click", this.obradiKlik.bind(this))
-    document.addEventListener("dblclick", this.obradiDvoklik.bind(this))
   }
 
   ukloniSlusace() {
@@ -187,7 +168,6 @@ export class Editor extends Scena {
     document.removeEventListener("mouseout", this.obradiMishIzvan)
     document.removeEventListener("mousemove", this.obradiMishMrda)
     document.removeEventListener("click", this.obradiKlik)
-    document.removeEventListener("dblclick", this.obradiDvoklik)
   }
 
   obradiMishStisnut(e) {
@@ -207,12 +187,7 @@ export class Editor extends Scena {
   }
 
   obradiKlik(e) {
-    if (e.target.id == 'sacuvaj') this.azurirajPozicije()
-  }
-
-  obradiDvoklik(e) {
-    const element = e.target
-    if (element.classList && element.classList.contains('js-azurira-izbor')) this.azurirajIzbor(element)
+    if (e.target.id == 'sacuvaj') this.sacuvajPozicije()
   }
 
 }
