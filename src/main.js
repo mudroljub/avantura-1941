@@ -5,15 +5,18 @@ import {Izbor} from './komponente/izbor/Izbor'
 import {Izvestaj} from './komponente/izvestaj/Izvestaj'
 import {Sudbina} from './komponente/sudbina/Sudbina'
 import {Zakletva} from './komponente/zakletva/Zakletva'
+import {Kisha} from "./priroda/Kisha.js";
 
+const nocniStil = `
+body {
+  background-color: #295079;
+}`
 const Sabloni = { Ishod, Izbor, Izvestaj, Sudbina, Zakletva }
 
-/**
- * ažurirati logiku za kišu i css
- */
-const editor = new Editor()
-
 const prvaScena = praviScenu('1941-05-01-okupacija')
+prvaScena.stil = nocniStil
+prvaScena.priroda = new Kisha()
+
 let trenutnaScena = prvaScena
 trenutnaScena.start()
 
@@ -45,7 +48,7 @@ function pustiScenu(ruta) {
   if (ruta in data) {
     trenutnaScena = praviScenu(ruta)
   } else if (ruta == 'editor') {
-    trenutnaScena = editor
+    trenutnaScena = new Editor()
   } else {
     trenutnaScena = prvaScena
   }

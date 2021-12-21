@@ -15,12 +15,14 @@ export class Scena {
     this.podaciFajl = 'podaci.json'
   }
 
-  start () {
+  start() {
+    if (this.priroda) this.priroda.start()
     this.render()
     document.title = this.podaci.naslov || document.title
   }
 
-  stop () {
+  stop() {
+    if (this.priroda) this.priroda.stop()
     this.clear()
   }
 
