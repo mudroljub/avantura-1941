@@ -2,13 +2,8 @@
 // da pratiMisha menja x2 i y2 umesto style.left i style.top
 // kada izbor dodirne scenu da preuzme vrednost (zalepi se)
 
-import {
-  Scena
-} from '../Scena'
-import {
-  scene,
-  lokacije
-} from '../../generisano/scene'
+import { Scena } from '../Scena'
+import { scene, lokacije } from '../../generisano/scene'
 import pozicije from './pozicije.json'
 import sablon from './sablon.html'
 import stil from './stil.css'
@@ -48,6 +43,7 @@ export class Editor extends Scena {
     let polaSirineInputa = 118
     let polaVisineInputa = 22
 
+    console.log(scene);
     for (let scena in scene) {
       let x = pozicije[scena] && pozicije[scena].x || window.innerWidth / 2 - polaSirineDugmeta
       let godina = scena.substring(0, 4)

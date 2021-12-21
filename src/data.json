@@ -1,0 +1,171 @@
+{
+  "1941-05-01-okupacija": {
+    "sablon": "Izbor",
+    "naslov": "Okupacija Jugoslavije",
+    "slika": "fotke/italijanska-vojska-na-balkanu.jpg",
+    "opis": "Fašistički okupatori su pregazili tvoju zemlju. Regularna vojska je poražena za svega par dana. Čuo si da komunisti i neki oficiri nameravaju da nastave otpor.",
+    "pitanje": "Šta ćeš učiniti?",
+    "izbori": [
+      {
+        "opis": "Pridružiću se komunistima!",
+        "link": "1941-05-15-pripreme"
+      },
+      {
+        "opis": "Pridružiću se oficirima!",
+        "link": "1941-05-15-ravna-gora"
+      },
+      {
+        "opis": "Ostaću kod kuće.",
+        "link": "1941-05-10-odvodjenje"
+      }
+    ]
+  },
+  "1941-05-10-odvodjenje": {
+    "sablon": "Sudbina",
+    "naslov": "Vratio si se doma",
+    "slika": "fotke/1941/1941-10-kragujevac-nemci-odvode-narod.jpg",
+    "opis": "Žandarmi u službi okupatora odvode sve za koje sumnjaju da su Romi, Jevreji ili komunisti. Zakucali su na tvoja vrata.",
+    "pitanje": "Šta će biti s tobom?",
+    "akcija": "Baci kockicu da saznaš.",
+    "ishodi": [
+      {
+        "naslov": "Koncentracioni logor",
+        "opis": "Zarobljen si i odveden u koncentracioni logor. Tvoji izgledi za ostanak u životu postaju sve manji."
+      },
+      {
+        "naslov": "Izvukao si se",
+        "opis": "Vojnici su ti pretresli kuću, pregledali dokumenta, i nastavili."
+      },
+      {
+        "mrtav": "mrtav",
+        "opis": "Streljan si na dnu ulice u kojoj si živeo. Tvoja smrt je potpuno uzaludna."
+      }
+    ]
+  },
+  "1941-05-15-pripreme": {
+    "sablon": "Izbor",
+    "naslov": "Pripreme za ustanak",
+    "slika": "fotke/1941/1941-05-komunisti-vezbaju-pucanje.jpg",
+    "opis": "Sa članovima ilegalne Komunističke partije Jugoslavije izašao si van grada da vežbaš rukovanje oružjem. Ako okupaciona vlast sazna za ovo, ti i čitava tvoja porodica ćete biti internirani u koncentracione logore.",
+    "pitanje": "Šta ćeš učiniti?",
+    "izbori": [
+      {
+        "opis": "Ostaću sa partizanima!",
+        "link": "1941-07-07-zakletva"
+      },
+      {
+        "opis": "Prećiću četnicima!",
+        "link": "oj-cetnici"
+      },
+      {
+        "opis": "Vratiću se kući.",
+        "link": "1941-09-24-sabac"
+      }
+    ]
+  },
+  "1941-05-15-ravna-gora": {
+    "sablon": "Izbor",
+    "naslov": "Na Ravnoj gori",
+    "slika": "fotke/1941/1941-05-ravna-gora.jpg",
+    "opis": "Pridružio si se grupi nepredatih pripadnika Jugoslovenske vojske, koju predvodi pukovnik Mihailović. Za okupacionu vlast, svi koji nisu položili oružje, postaju odmetnici.",
+    "pitanje": "Šta ćeš učiniti?",
+    "izbori": [
+      {
+        "opis": "Ostaću sa četnicima",
+        "link": "mmmm"
+      },
+      {
+        "opis": "Prićiću komunistima",
+        "link": "1941-07-07-zakletva"
+      },
+      {
+        "opis": "Vratiću se kući.",
+        "link": "bbbbb"
+      }
+    ]
+  },
+  "1941-07-07-zakletva": {
+    "sablon": "Zakletva",
+    "naslov": "Partizanska zakletva",
+    "upute": "Unesi svoje ime kako bi prihvatio partizansku zakletvu:",
+    "akcija": "Zaklinjem se!",
+    "slika": "fotke/1941/1941-08-cacanski-partizanski-odred.jpg",
+    "tekstZakletve1": "Ja ${this.igrac.ime}, sin srpskog naroda, zaklinjem se svojom čašću da u ${this.igrac.jedinica} stupam sa čvrstom odlukom da se borim protiv fašističih okupatora i izdajnika srpskog naroda.",
+    "tekstZakletve2": "Mi, narodni partizani Jugoslavije, latili smo se oružja za nemilosrdnu borbu protiv krvoločnih neprijatelja koji porobiše našu zemlju i istrebljuju naše narode. Zaklinjemo se da ćemo disciplinovano, uporno i neustrašivo, ne štedeći svoje krvi i života, voditi borbu do potpunog uništenja fašističkog osvajača i svih narodnih izdajnika.",
+    "akcija2": "U borbu druže ${this.igrac.ime}!"
+  },
+  "1941-08-08-zakletva": {
+    "sablon": "Zakletva",
+    "naslov": "Četnička zakletva",
+    "tekst": "Ja, ${this.igrac.ime}, zaklinjem se svemogućim Bogom, da ću Vrhovnom zapovedniku sve vojne sile, Kralju Jugoslavije Petru II, svagda i u svim prilikama, biti veran, svom dušom odan i poslušan; da ću se za Kralja i Otadžbinu junački boriti; da vojničku zastavu nigde i nikad neću izneveriti i da ću zapovesti svih pretpostavljenih mi starešina slušati i verno izvršavati. Tako mi Bog pomogao!"
+  },
+  "1941-08-11-izvestaj": {
+    "sablon": "Izvestaj",
+    "naslov": "Nemački izveštaj",
+    "tekst": "Po mišljenju komandanta Srbije, a u suprotnosti sa iznetim za Hrvatsku, nemiri se u prvom redu i gotovo isključivo imaju pripisati komunističkom uticaju.",
+    "potpis": "Nemački izveštaj od 11. avgusta 1941."
+  },
+  "1941-09-09-diverzija": {
+    "sablon": "Izbor",
+    "naslov": "Gerilski otpor",
+    "slika": "fotke/1941/1941-07-cacak-uzice-diverzija.jpg",
+    "opis": "Tvoj odred je izvršio prvu uspešnu diverziju na pruzi. Izbacili ste iz šina voz koji je prevozio nemačku vojsku. Poniženi, Nemci ubijaju nejač nakon svake uspešne gerilske akcije. Tvoja porodica je ostala u gradu.",
+    "pitanje": "Šta ćeš učiniti?",
+    "izbori": [
+      {
+        "opis": "Pritajiću se u šumi.",
+        "link": "pritajeni"
+      },
+      {
+        "opis": "Napadaću još žešće fašističke krvnike.",
+        "link": "borba"
+      },
+      {
+        "opis": "Vratiću se doma.",
+        "link": "1941-09-24-sabac"
+      }
+    ]
+  },
+  "1941-09-24-sabac": {
+    "sablon": "Sudbina",
+    "naslov": "Čekaš da prođe rat",
+    "slika": "fotke/1941/1941-09-27-sabac-odvodjenje-roma-na-streljanje",
+    "opis": "Lojalan si okupatoru u svom domu. Nemci upadaju po kućama i odvode civile na streljanje. Zakucali su na tvoja vrata.",
+    "pitanje": "Šta će biti s tobom?",
+    "akcija": "Baci kockicu da saznaš.",
+    "ishodi": [
+      {
+        "naslov": "Ishod 1",
+        "opis": "Zarobljen si...."
+      },
+      {
+        "naslov": "Ishod 3",
+        "opis": "Izvukao si se..."
+      },
+      {
+        "mrtav": "mrtav"
+      }
+    ]
+  },
+  "1941-10-10-kraljevo-opsada": {
+    "sablon": "Izbor",
+    "naslov": "Ustaničke borbe",
+    "slika": "fotke/1941/1941-10-kraljevo.jpg",
+    "opis": "Tvoj odred je naneo teške gubitke Nemcima u borbama za Kraljevo. Opkoljeni, okupatori masovno streljaju nedužne civile u gradu. Tvoja porodica je ostala u gradu.",
+    "pitanje": "Šta ćeš učiniti?",
+    "izbori": [
+      {
+        "opis": "Pritajiću se u šumi.",
+        "link": "pritajeni"
+      },
+      {
+        "opis": "Napadaću krvnike još žešće.",
+        "link": "odmetnuti-cetnici"
+      },
+      {
+        "opis": "Vratiću se doma.",
+        "link": "kuca3"
+      }
+    ]
+  }
+}

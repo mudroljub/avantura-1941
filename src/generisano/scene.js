@@ -8,9 +8,6 @@ import Hronologija_1941_08_11_Izvestaj from '../hronologija/1941/08-11/Izvestaj.
 import Hronologija_1941_09_09_Diverzija from '../hronologija/1941/09-09/Diverzija.js'
 import Hronologija_1941_09_24_Sabac from '../hronologija/1941/09-24/Sabac.js'
 import Hronologija_1941_10_10_Kraljevo from '../hronologija/1941/10-10/Kraljevo.js'
-import Hronologija_1943_03_15_Opkoljen from '../hronologija/1943/03-15/Opkoljen.js'
-import Hronologija_1944_01_15_Opkoljen from '../hronologija/1944/01-15/Opkoljen.js'
-import Hronologija_1945_01_01_Straza from '../hronologija/1945/01-01/Straza.js'
 
 
 // nazivi su rute
@@ -24,9 +21,6 @@ export const scene = {
   '1941-09-09-diverzija': new Hronologija_1941_09_09_Diverzija(),
   '1941-09-24-sabac': new Hronologija_1941_09_24_Sabac(),
   '1941-10-10-kraljevo': new Hronologija_1941_10_10_Kraljevo(),
-  '1943-03-15-opkoljen': new Hronologija_1943_03_15_Opkoljen(),
-  '1944-01-15-opkoljen': new Hronologija_1944_01_15_Opkoljen(),
-  '1945-01-01-straza': new Hronologija_1945_01_01_Straza(),
 }
 
 export const lokacije = {
@@ -39,7 +33,4 @@ export const lokacije = {
 	'1941-09-09-diverzija': 'src/hronologija/1941/09-09/Diverzija.js',
 	'1941-09-24-sabac': 'src/hronologija/1941/09-24/Sabac.js',
 	'1941-10-10-kraljevo': 'src/hronologija/1941/10-10/Kraljevo.js',
-	'1943-03-15-opkoljen': 'src/hronologija/1943/03-15/Opkoljen.js',
-	'1944-01-15-opkoljen': 'src/hronologija/1944/01-15/Opkoljen.js',
-	'1945-01-01-straza': 'src/hronologija/1945/01-01/Straza.js',
 }

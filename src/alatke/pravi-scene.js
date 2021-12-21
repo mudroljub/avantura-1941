@@ -13,14 +13,14 @@ var slash = os.platform() == 'win32' ? '\\' : '/'
 var putanja = `src${slash}hronologija${slash}`
 var nazivFajla = `src${slash}generisano${slash}scene.js`
 
-nadjiJsFajlove(function(podaci) {
+procitajFajlove(function(podaci) {
   var scene = praviScene(podaci)
   upisiFajl(scene)
 })
 
 /* FUNKCIJE */
 
-function nadjiJsFajlove(callback) {
+function procitajFajlove(callback) {
   dir.files(putanja, function(err, files) {
     if (err) throw err;
     var jsFajlovi = []
