@@ -10,8 +10,6 @@
   "scripts": {
     "prebuild": "node ./src/alatke/pravi-scene.js",
     "start": "webpack-dev-server --inline --hot",
-    "editor": "npm-run-all -p prebuild start backend",
-    "backend": "nodemon ./src/alatke/server.js",
     "build": "npm run prebuild & webpack -p"
   },
   "devDependencies": {
@@ -25,8 +23,6 @@
     "html-loader": "^0.4.3",
     "json-loader": "^0.5.4",
     "node-dir": "^0.1.16",
-    "nodemon": "^1.10.2",
-    "npm-run-all": "^3.1.0",
     "path": "^0.12.7",
     "style-loader": "^0.13.1",
     "to-string-loader": "^1.1.4",

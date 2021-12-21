@@ -1,10 +1,20 @@
+import data from './data.json'
 import {Editor} from './komponente/editor/Editor'
-import {scene} from './generisano/scene'
+import {Ishod} from './komponente/ishod/Ishod'
+import {Izbor} from './komponente/izbor/Izbor'
+import {Izvestaj} from './komponente/izvestaj/Izvestaj'
+import {Sudbina} from './komponente/sudbina/Sudbina'
+import {Zakletva} from './komponente/zakletva/Zakletva'
 
+const Sabloni = { Ishod, Izbor, Izvestaj, Sudbina, Zakletva }
+
+/**
+ * ažurirati logiku za kišu i css
+ */
 const editor = new Editor()
-const prvaScena = scene['1941-05-01-okupacija']
-let trenutnaScena = prvaScena
 
+const prvaScena = praviScenu('1941-05-01-okupacija')
+let trenutnaScena = prvaScena
 trenutnaScena.start()
 
 /* DOGADJAJI */
@@ -24,10 +34,16 @@ window.addEventListener('hashchange', rutiraj)
 
 /* FUNKCIJE */
 
+function praviScenu(ruta) {
+  const scena = data[ruta]
+  const Sablon = Sabloni[scena.sablon] || Izbor
+  return new Sablon(scena)
+}
+
 function pustiScenu(ruta) {
   trenutnaScena.stop()
-  if (ruta in scene) {
-    trenutnaScena = scene[ruta]
+  if (ruta in data) {
+    trenutnaScena = praviScenu(ruta)
   } else if (ruta == 'editor') {
     trenutnaScena = editor
   } else {

@@ -78,6 +78,6 @@ Stil se renderuje u html šablonu unutar `style` taga, na sledeći način:
 </style>
 ```
 
-## Uraditi:
-- srediti level editor
+## TODO:
+- implementirati novu render logiku za scene, ukloniti generisano
 - unositi sadržaj
