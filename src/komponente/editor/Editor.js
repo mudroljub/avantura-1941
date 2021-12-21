@@ -73,9 +73,9 @@ export class Editor extends Scena {
               x1="${x + polaSirineDugmeta}"
               y1="${y + polaVisineDugmeta}" `
             // ako ima pozicija scene, povezuje putanjom, ako nema pravi input
-          if (pozicije[izbori[i].link]) {
-            let ishodX = pozicije[izbori[i].link].x
-            let ishodY = pozicije[izbori[i].link].y
+          if (pozicije[izbori[i].veza]) {
+            let ishodX = pozicije[izbori[i].veza].x
+            let ishodY = pozicije[izbori[i].veza].y
             this.putanje += `
               x2="${ishodX + polaSirineDugmeta}"
               y2="${ishodY+ polaVisineDugmeta}" />`
@@ -86,7 +86,7 @@ export class Editor extends Scena {
               <input
                 class="js-mrda-x absolute"
                 style="top:${inputY}px; left:${inputX}px;"
-                value="${izbori[i].link}"
+                value="${izbori[i].veza}"
                 data-scena="${key}" data-index="${i}" />
               <small
                 class="absolute"

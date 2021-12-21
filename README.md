@@ -79,6 +79,7 @@ Stil se renderuje u html šablonu unutar `style` taga, na sledeći način:
 ```
 
 ## TODO:
+- napraviti bolji eval u Zakletva.js za data 1941-07-07-zakletva
 - srediti četničku zakletvu u data.json
 - proveriti interpolaciju struna u data.json
 - unositi sadržaj

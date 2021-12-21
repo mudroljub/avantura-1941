@@ -6,8 +6,9 @@ const css = {
   zakletva: "none"
 }
 
-export class Zakletva extends Scena {
+const capitalize = phrase => phrase.charAt(0).toUpperCase() + phrase.slice(1).toLowerCase();
 
+export class Zakletva extends Scena {
   constructor(podaci) {
     super(podaci, sablon)
     this.css = css
@@ -17,6 +18,9 @@ export class Zakletva extends Scena {
     super.start()
     document.querySelector("#ime").focus()
     document.querySelector('#pokazi-zakletvu').addEventListener('click', this.pokaziZakletvu.bind(this))
+    document.addEventListener("keydown", (e) => {
+      if (e.code === "Enter") this.pokaziZakletvu()
+    })
   }
 
   render() {
@@ -24,7 +28,7 @@ export class Zakletva extends Scena {
   }
 
   pokaziZakletvu() {
-    this.igrac.ime = document.querySelector("#ime").value
+    this.igrac.ime = capitalize(document.querySelector("#ime").value)
     if (!this.igrac.ime) return
     this.css.zakletva = 'block'
     this.css.upute = 'none'

@@ -8,15 +8,15 @@
     "izbori": [
       {
         "opis": "Pridružiću se komunistima!",
-        "link": "1941-05-15-pripreme"
+        "veza": "1941-05-15-pripreme"
       },
       {
         "opis": "Pridružiću se oficirima!",
-        "link": "1941-05-15-ravna-gora"
+        "veza": "1941-05-15-ravna-gora"
       },
       {
         "opis": "Ostaću kod kuće.",
-        "link": "1941-05-10-odvodjenje"
+        "veza": "1941-05-10-odvodjenje"
       }
     ]
   },
@@ -30,11 +30,13 @@
     "ishodi": [
       {
         "naslov": "Koncentracioni logor",
-        "opis": "Zarobljen si i odveden u koncentracioni logor. Tvoji izgledi za ostanak u životu postaju sve manji."
+        "opis": "Zarobljen si i odveden u koncentracioni logor. Tvoji izgledi za ostanak u životu postaju sve manji.",
+        "veza": "blabla"
       },
       {
         "naslov": "Izvukao si se",
-        "opis": "Vojnici su ti pretresli kuću, pregledali dokumenta, i nastavili."
+        "opis": "Vojnici su ti pretresli kuću, pregledali dokumenta, i nastavili.",
+        "veza": "blabla"
       },
       {
         "mrtav": "mrtav",
@@ -51,15 +53,15 @@
     "izbori": [
       {
         "opis": "Ostaću sa partizanima!",
-        "link": "1941-07-07-zakletva"
+        "veza": "1941-07-07-zakletva"
       },
       {
         "opis": "Prećiću četnicima!",
-        "link": "oj-cetnici"
+        "veza": "oj-cetnici"
       },
       {
         "opis": "Vratiću se kući.",
-        "link": "1941-09-24-sabac"
+        "veza": "1941-09-24-sabac"
       }
     ]
   },
@@ -72,15 +74,15 @@
     "izbori": [
       {
         "opis": "Ostaću sa četnicima",
-        "link": "mmmm"
+        "veza": "mmmm"
       },
       {
         "opis": "Prićiću komunistima",
-        "link": "1941-07-07-zakletva"
+        "veza": "1941-07-07-zakletva"
       },
       {
         "opis": "Vratiću se kući.",
-        "link": "bbbbb"
+        "veza": "bbbbb"
       }
     ]
   },
@@ -114,15 +116,15 @@
     "izbori": [
       {
         "opis": "Pritajiću se u šumi.",
-        "link": "pritajeni"
+        "veza": "pritajeni"
       },
       {
         "opis": "Napadaću još žešće fašističke krvnike.",
-        "link": "borba"
+        "veza": "borba"
       },
       {
         "opis": "Vratiću se doma.",
-        "link": "1941-09-24-sabac"
+        "veza": "1941-09-24-sabac"
       }
     ]
   },
@@ -156,15 +158,15 @@
     "izbori": [
       {
         "opis": "Pritajiću se u šumi.",
-        "link": "pritajeni"
+        "veza": "pritajeni"
       },
       {
         "opis": "Napadaću krvnike još žešće.",
-        "link": "odmetnuti-cetnici"
+        "veza": "odmetnuti-cetnici"
       },
       {
         "opis": "Vratiću se doma.",
-        "link": "kuca3"
+        "veza": "kuca3"
       }
     ]
   }

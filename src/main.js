@@ -39,7 +39,7 @@ window.addEventListener('hashchange', rutiraj)
 
 function praviScenu(ruta) {
   const scena = data[ruta]
-  const Sablon = Sabloni[scena.sablon] || Izbor
+  const Sablon = Sabloni[scena.sablon] // || Izbor
   return new Sablon(scena)
 }
 

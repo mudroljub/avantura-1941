@@ -13,7 +13,7 @@ export class Izbor extends Scena {
 function praviDugmice(izbori) {
   let dugmici = ``
   for (let n in izbori) {
-    dugmici += `<button value="${izbori[n].link}" class="js-start">${izbori[n].opis}</button>`
+    dugmici += `<button value="${izbori[n].veza}" class="js-start">${izbori[n].opis}</button>`
   }
   return dugmici
 }

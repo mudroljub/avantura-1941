@@ -17,7 +17,7 @@ export class Mrtav extends Ishod {
     this.podaci.slika = podaci.slika || 'fotke/smrt/jajinci-doubijanje.jpg'
     this.podaci.opis = podaci.opis || ishodi[Math.floor(Math.random() * ishodi.length)]
     this.podaci.akcija = podaci.akcija || akcije[Math.floor(Math.random() * akcije.length)]
-    this.podaci.link = podaci.link || ''
+    this.podaci.veza = podaci.veza || ''
   }
 
 }
